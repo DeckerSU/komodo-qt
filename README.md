@@ -77,5 +77,5 @@ We don't use any specific Windows routines in our code, so, various parts of cod
 
 ### Developers of Qt wallet ###
 
-Main developer: [@Ocean](https://komodo-platform.slack.com/team/U8BRG09EV)
-IT Expert / Sysengineer: [@Decker](https://komodo-platform.slack.com/messages/D5UHJMCJ3)
+- Main developer: [@Ocean](https://komodo-platform.slack.com/team/U8BRG09EV)
+- IT Expert / Sysengineer: [@Decker](https://komodo-platform.slack.com/messages/D5UHJMCJ3)
