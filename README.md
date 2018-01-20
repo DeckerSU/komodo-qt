@@ -75,7 +75,7 @@ We don't use any specific Windows routines in our code, so, various parts of cod
 
 **A.** Right after alpha-test period is over. Unfortunatelly, you can't join to developent right now. We don't want to publish any sources until of major issues will be fixed. But you can help us with testing current version and reporting about founded issues. We do our best to approximate the day of publishing sources, but our main aim is to release stable and fully functionally application without any major issues. 
 
-### Developers of Qt wallet###
+### Developers of Qt wallet ###
 
 Main developer: [@Ocean](https://komodo-platform.slack.com/team/U8BRG09EV)
 IT Expert / Sysengineer: [@Decker](https://komodo-platform.slack.com/messages/D5UHJMCJ3)
