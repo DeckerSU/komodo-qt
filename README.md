@@ -53,11 +53,24 @@ Supported (tested) features:
 Existing issues:
 
 - If you are syncing blockchain first time, estimated time and percentage of loading blocks not showed in status bar. But app is syncing at that moment, this is "checkpoints" related issue, right now any checkpoints is absent in original Komodo sources, so, app couldn't determine current percentage of blockchain loading (we are working on this issue). So, if you start sync blocks first time on your PC - just wait some time when it finished.
-- In a Help -> Debug window menu "number of connections" field always displays 0 in / 0 out. You can get actual nubber of connections by typing `getinfo` in Help -> Debug Window -> Console. Also, Debug window -> Peers tab don't display current peers list right now.
+- In a Help -> Debug window -> Peers tab don't display current peers list right now.
+- Launched application can have 25-30% CPU usage on some PCs, this is GUI issue, core don't cause CPU load. We are working on this.
+
+### Version History ###
+
+- **Alpha Build 13** (1/21/2018)
+
+	- Fixed some minor issues.
+	- Fixed displaying number of in/out connections in Debug Window -> Information tab.
+	- Fixed displaying number of current connections in status bar. Clicking on network activity icon in status bar to start/stop network activity now works correctly.  
+
+
+
+- **Alpha Build 12** (1/19/2018) - First public release. 
 
 ### How to run? ###
 
-Just unpack latest release from releases section and run KomodoOceanGUI.exe . If you find any issues or have a questions, please, use the issues section of this repo to contact us.
+Just unpack latest release from [releases section](https://github.com/DeckerSU/komodo-qt/releases) and run KomodoOceanGUI.exe . If you find any issues or have a questions, please, use the issues section of this repo to contact us.
 
 ### FAQ ###
 
