@@ -57,6 +57,10 @@ Existing issues:
 
 ### Version History ###
 
+- **Alpha Build 16** (notes)
+
+	During investigate issues with syncing new blocks and some errors during sending and receiving transactions we decided to hide Build 16 binaries from public, until all issues will be solved. Seems, we need to revert global changes with Wallet and Wallet DB related classes. We are working on this and will release new build as fast as possible. Currently you can use latest build from releases section. 
+
 - **Alpha Build 16** (1/23/2018)
 
 	This is important / *singnificant release* with some major changes, because of this all standart functions needs to be re-tested with increased attention.
