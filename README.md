@@ -53,10 +53,26 @@ Supported (tested) features:
 Existing issues:
 
 - If you are syncing blockchain first time, estimated time and percentage of loading blocks not showed in status bar. But app is syncing at that moment, this is "checkpoints" related issue, right now any checkpoints is absent in original Komodo sources, so, app couldn't determine current percentage of blockchain loading (we are working on this issue). So, if you start sync blocks first time on your PC - just wait some time when it finished.
-- In a Help -> Debug window -> Peers tab don't display current peers list right now.
-- Launched application can have 25-30% CPU usage on some PCs, this is GUI issue, core don't cause CPU load. We are working on this.
+- Default Tx Fee now is *0.00005000 KMD*, instead of standart fee 0.00001000 KMD. Some options on Transaction Fee tab related to choose fee doesn't affect real tx fee. We already know about this issue and will solve it in future releases. 
 
 ### Version History ###
+
+- **Alpha Build 16** (1/23/2018)
+
+	This is important / *singnificant release* with some major changes, because of this all standart functions needs to be re-tested with increased attention.
+
+	- Wallet and Wallet DB related classes (such as CWallet, CWalletDB, CDB), some RPC and Init procedures was *cardinally* rewritten and partially derived from Bitcoin Core sources. This cause source code more logic and readable, also it was fixed some issues, included high CPU usage in some cases. 
+	- Earlier found issue with high CPU load in ThreadFlushWalletDB (this thread was used to close wallet.dat file if it hasn't been used in 500ms) was fixed by removing ThreadFlushWalletDB and using CScheduler for wallet flushing.
+	- Source code clean-up.
+	- Fixed displaying connected peers list in Help -> Debug window -> Peers.
+	- Allow banning selected peers from GUI (also in Help -> Debug window -> Peers).
+	- Solved issue with File -> Backup wallet function that was failed in some cases. Now wallet backup from GUI should work correctly.
+	- All binaries from this release (*.exe, *.dll) have *Release* version, instead of *Debug*. Using release version of binaries compiled with speed optimizations cause komodo-qt works *faster* than earlier. 
+	- Other speed optimizations. Now komodo-qt loads blocks index from fully synced blockchain in 6 mins on Core i7-6700k / 16 Gb / SSD drive, earlier it tooks 10-11 mins. So, now we have **x2** faster loading blocks.
+	- Fixed some minor issues.  
+
+
+
 
 - **Alpha Build 13** (1/21/2018)
 
