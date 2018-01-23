@@ -71,7 +71,7 @@ Existing issues:
 	- Other speed optimizations. Now komodo-qt loads blocks index from fully synced blockchain in 6 mins on Core i7-6700k / 16 Gb / SSD drive, earlier it tooks 10-11 mins. So, now we have **x2** faster loading blocks.
 	- Fixed some minor issues.  
 
-
+**p.s.** If you are experiencing some problems with using this build, plz report about it in Issues section and just temporary use previous build until all confirmed issues will be fixed.
 
 
 - **Alpha Build 13** (1/21/2018)
