@@ -57,6 +57,42 @@ Existing issues:
 
 ### Version History ###
 
+- **Alpha Build 19** (1/24/2018)
+
+	- First version with build Release versions of *.exe and *.dll , previous issues from Build 16 and 18 were successfully fixed. Now this is *fastest* release that ever. Loading block index stage tooks only `1 min. 58 sec.` from fully synced blockchain and seems it's a little but **faster than a Linux** version on same PC (*Core i7-7700 / 8 Gb RAM / SSD*). 
+	
+	If you want to help us in perfomance measuring, sync blockchain, close the wallet and open it again. Wait for loading wallet and main screen with Balances and Recent transactions appears. After open your log file in `%APPDATA%\debug.log` and copy following lines:
+
+    ```
+    2018-01-24 19:41:56 LoadBlockIndexDB: starting...
+    2018-01-24 19:41:56 komodo_statefname
+    2018-01-24 19:41:56 komodo_stateupdate: komodostate loaded...
+    2018-01-24 19:41:56 komodo_stateupdate: komodostate parsed...
+    2018-01-24 19:41:56 fname.(C:\Users\User\AppData\Roaming\Komodo\komodostate) fpos.8089827
+    ...
+	2018-01-24 19:43:15 LoadBlockIndexDB: loaded block index guts...
+	2018-01-24 19:43:16 LoadBlockIndexDB: sorted...
+    2018-01-24 19:43:17 LoadBlockIndexDB: last block file = 13
+    2018-01-24 19:43:17 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=20019, size=95281106, heights=662443...677743, time=2018-01-12...2018-01-23)
+    2018-01-24 19:43:17 Checking all blk files are present...
+     
+    ```
+
+	It will show perfomance (time) of loading blocks on your PC. Post your resuls and PC configuration in Issues section, Slack channel #komodo or Telegram group. Thx in advance.
+
+- **Alpha Build 18** (1/24/2018)
+
+	In this release we abandoned global changes from Build 16 and now it's stable.
+
+	- Reverting all global changes with CWallet, CWalletDB, CDB classes.
+	- High CPU load usage in ThreadFlushWalletDB was fixed by other way, ThreadFlushWalletDB thread still exists in source and was untouched.
+	- Source code clean-up and reassessment.
+	- Fixed copyrights in Help -> About window.
+	- Added `IsMine` and `Watch-only` columns in Receiving addresses list (it's very useful to determine which addresses belongs to your wallet if you are added some watch-only addresses via `importaddress` command or if you are using [BarterDEX](https://www.komodoplatform.com/en/technology/barterdex)).
+	- All binaries were reverting to Debug versions, because release version of *.exe and *.dll's have several networkng issues.
+
+
+
 - **Alpha Build 16** (notes)
 
 	During investigate issues with syncing new blocks and some errors during sending and receiving transactions we decided to hide Build 16 binaries from public, until all issues will be solved. Seems, we need to revert global changes with Wallet and Wallet DB related classes. We are working on this and will release new build as fast as possible. Currently you can use latest build from releases section. 
@@ -106,7 +142,10 @@ We don't use any specific Windows routines in our code, so, various parts of cod
 
 **Q.** When you are planning to publish sources?
 
-**A.** Right after alpha-test period is over. Unfortunatelly, you can't join to developement right now. We don't want to publish any sources until of major issues will be fixed. But you can help us with testing current version and reporting about founded issues. We do our best to approximate the day of publishing sources, but our main aim is to release stable and fully functionally application without any major issues. 
+**A.** Right after alpha-test period is over. Unfortunatelly, you can't join to developement right now. We don't want to publish any sources until of major issues will be fixed. But you can help us with testing current version and reporting about founded issues. We do our best to approximate the day of publishing sources, but our main aim is to release stable and fully functionally application without any major issues.
+
+**Q.** Where i can find "absent" builds? For example, i see in releases section *Build xx*, but no binaries for it?
+**A.** In releases sections you can find only *stable* releases, it means that the release exist in History of changes, but was deleted from releases section - it was contains some major issues and was excluded from public. Some releases with issues was marked us for internal use and will not avilable in public. Every release you can find in releases sections is already tested and shouldn't contain any major issues. 
 
 ### Developers of Qt wallet ###
 
