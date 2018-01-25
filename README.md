@@ -63,6 +63,7 @@ Existing issues:
 
 	- Improovements in handling assets.
 	- Fixed labels when displaying assets, now if komodo-qt started with `-ac_name` key currency name will be equal to launched asset name (next screenshot shows how it looks on PIZZA asset).
+	- Added launch_assets folder with *.cmd batch files for launching assets.
 
 	![](./images/image05.png)
 
