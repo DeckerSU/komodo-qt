@@ -1,5 +1,7 @@
 ## KomodoOcean (komodo-qt) ##
 
+![](./images/image00.png)
+
 This is *early alpha* of KomodoOcean / komodo-qt GUI qt-based wallet for Komodo (KMD). Probably (not sure) is a **world first Qt-Wallet** for ZCash based cryptocurrency forks. Now it available only for Windows (64-bit) platform, but in future with community help we have plan to build it for all three OS (Windows / Linux / MacOS).
 
 ![](./images/image01.png)
@@ -56,6 +58,13 @@ Existing issues:
 - Default Tx Fee now is *0.00005000 KMD*, instead of standart fee 0.00001000 KMD. Some options on Transaction Fee tab related to choose fee doesn't affect real tx fee. We already know about this issue and will solve it in future releases. 
 
 ### Version History ###
+
+- **Alpha Build 20** (1/26/2018)
+
+	- Improovements in handling assets.
+	- Fixed labels when displaying assets, now if komodo-qt started with `-ac_name` key currency name will be equal to launched asset name (next screenshot shows how it looks on PIZZA asset).
+
+	![](./images/image05.png)
 
 - **Alpha Build 19** (1/24/2018)
 
