@@ -45,7 +45,7 @@ Currenly komodo-qt is *under developement*. Use it at your own risk - do not use
 Supported (tested) features:
 
 - Launching GUI interface and syncing blockchain.
-- Faster blockchain indexes loading in compare with original komodod for Windows. Estimated speed of loading fully synced blockchain indexes on KMD is 3-4 min. on Core i7-6700K / 16 Gb RAM / SSD drive, that approaches speed of Linux PC with same hardware.
+- Faster blockchain indexes loading in compare with original komodod for Windows. Estimated speed of loading fully synced blockchain indexes on KMD is **50 sec.** on Core i7-6700K / 64 Gb RAM / SSD drive, that approaches speed of Linux PC with same hardware.
 - Receiving and sending coins.
 - Extended coin control features, selecting "Inputs..." (UTXOs) when sending coins.
 - Supporting assetchains (launch KomodoOceanGUI.exe with needed `-ac_name`, `-ac_supply` and `-addnode` command-line keys to launch wallet on needed assetchain).
