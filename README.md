@@ -54,10 +54,20 @@ Supported (tested) features:
 
 Existing issues:
 
-- If you are syncing blockchain first time, estimated time and percentage of loading blocks not showed in status bar. But app is syncing at that moment, this is "checkpoints" related issue, right now any checkpoints is absent in original Komodo sources, so, app couldn't determine current percentage of blockchain loading (we are working on this issue). So, if you start sync blocks first time on your PC - just wait some time when it finished.
-- Default Tx Fee now is *0.00005000 KMD*, instead of standart fee 0.00001000 KMD. Some options on Transaction Fee tab related to choose fee doesn't affect real tx fee. We already know about this issue and will solve it in future releases. 
+- You tell us ... ;)
+
 
 ### Version History ###
+
+- **Alpha Build 22** (1/30/2018)
+
+	- Added [checkpoints for KMD blockchain](https://github.com/jl777/komodo/commit/b3f7ce9b7a50bb349776790ce39db7280202eedf). Now, progress bar when loading blocks from network first time in a life will show actual information (mean, elapsed, estimated).
+	- Fixed Fee during sending coins. Earlier versions of Komodo-Qt was used fixed fee **0.00005 KMD**. Now it's fixed and Transaction Fee setting is applying correctly.
+	- Source code cleanup.
+	- For assetchains `*.conf` files were created in wrong place, all of them was created in `%APPDATA%\Komodo` folder. Now it fixed and *.conf files creates in right place `%APPDATA%\Komodo\%assetname%` folder.
+	- Fixed some minor issues ...
+
+
 
 - **Alpha Build 20** (1/26/2018)
 
