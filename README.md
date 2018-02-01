@@ -25,7 +25,7 @@ Before you start create the following configuration file, named `komodo.conf` in
     addnode=144.76.94.38
     addnode=89.248.166.91
 
-And download [sprout-proving.key](https://z.cash/download/sprout-proving.key) and [sprout-verifying.key](https://z.cash/download/sprout-verifying.key) in %APPDATA%\ZcashParams folder. If you already have installed original komodod.exe (console daemon) for Windows, or Agama Wallet - you already have all needed. 
+And download [sprout-proving.key](https://z.cash/downloads/sprout-proving.key) and [sprout-verifying.key](https://z.cash/downloads/sprout-verifying.key) in %APPDATA%\ZcashParams folder. If you already have installed original komodod.exe (console daemon) for Windows, or Agama Wallet - you already have all needed. 
 
 Alternative download links for ZcashParams:
 
